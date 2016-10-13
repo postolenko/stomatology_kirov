@@ -123,22 +123,27 @@ $(document).ready(function() {
         var mosaicItemsCount = $(".mosaicflow .mosaicflow__item").length - 1;
         var mosaicItemsCountFor = 0;
 
-        setTimeout(function() {
+        var showMosaicItemInterval = setInterval(function() {
 
-            for( mosaicItemsCountFor = 0; mosaicItemsCountFor <= mosaicItemsCount; mosaicItemsCountFor++ ) {
+            $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").fadeIn(400);
 
-                $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +") .mosaic-inner-content").outerWidth(true));
+            $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +") .mosaic-inner-content").outerWidth(true));
 
-                if($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data")) {
+            if($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data")) {
 
-                    $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data"));
-
-                }
+                $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data"));
 
             }
 
-        }, 800);
+            mosaicItemsCountFor++;
 
+            if(mosaicItemsCountFor > mosaicItemsCount) {
+
+                clearInterval(showMosaicItemInterval);
+
+            }
+
+        }, 700);                
 
 
     });

@@ -1034,9 +1034,11 @@ a:active {
 }
 
 .mosaicflow__item {
+    display: none;
     background: rgba(204, 201, 201, 1);
     overflow: hidden;
     height: 270px;
+    width: auto;
     float: left;
     position: relative;
 }
