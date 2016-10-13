@@ -123,17 +123,23 @@ $(document).ready(function() {
         var mosaicItemsCount = $(".mosaicflow .mosaicflow__item").length - 1;
         var mosaicItemsCountFor = 0;
 
-        for( mosaicItemsCountFor = 0; mosaicItemsCountFor <= mosaicItemsCount; mosaicItemsCountFor++ ) {
+        setTimeout(function() {
 
-            $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +") .mosaic-inner-content").outerWidth(true));
+            for( mosaicItemsCountFor = 0; mosaicItemsCountFor <= mosaicItemsCount; mosaicItemsCountFor++ ) {
 
-            if($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data")) {
+                $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +") .mosaic-inner-content").outerWidth(true));
 
-                $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data"));
+                if($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data")) {
+
+                    $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data"));
+
+                }
 
             }
 
-        }
+        }, 500)
+
+
 
     });
 
