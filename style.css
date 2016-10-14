@@ -220,7 +220,7 @@ h2 {
     line-height: 48px;
     font-weight: 300;
     color: #333333;    
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 h2 span {
@@ -235,16 +235,77 @@ h2 span {
     padding: 10px 0;
 }
 
+.h2-box {
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.h2-box:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(229, 229, 229, 1);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 2px 0 0 0;
+}
+
+.h2-box h2 {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    color: #333333;    
+    padding: 5px 4%;
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 2;
+}
+
 h3 {
 
 }
 
 p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #555555;
+    padding: 7px 0;
+}
 
+ul {
+    padding: 10px 0;
 }
 
 li {
+    display: table;
     list-style: none;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #555555;
+    padding: 11px 0;
+}
+
+li:before {
+    display: table-cell;
+    vertical-align: top;
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    font-size: 14px;
+    line-height: 20px;
+    color: #b58341;
+    padding: 2px 20px 0 0;
 }
 
 a {
@@ -552,6 +613,7 @@ a:active {
 
 .main-nav ul {
     text-align: center;
+    padding: 0;
 }
 
 .main-nav ul li {
@@ -559,6 +621,10 @@ a:active {
     vertical-align: top;
     padding: 0 30px;
     position: relative;
+}
+
+.main-nav ul li:before {
+    display: none;
 }
 
 .main-nav ul li a {
@@ -1455,7 +1521,7 @@ a:active {
 .seo-text-section .links-box h3 {
     font-family: "Open Sans", Arial, Verdana, sans-serif;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 37px;
     font-weight: 300;
     color: #333333;
     padding: 5px 0;
@@ -1466,7 +1532,14 @@ a:active {
 }
 
 .seo-text-section .links-box ul li {
+    padding: 2px 0;
+    font-size: 0;
+    line-height: 0;
+}
 
+
+.seo-text-section .links-box ul li:before {
+    display: none;
 }
 
 .seo-text-section .links-box ul li a {
@@ -1522,12 +1595,15 @@ a:active {
 }
 
 .breadcrumbs-list {
-
+    padding: 0;
 }
 
 .breadcrumbs-list li {
     display: inline-block;
     vertical-align: middle;
+}
+.breadcrumbs-list li:before {
+    display: none;
 }
 
 .breadcrumbs-list li:after {
@@ -1585,20 +1661,27 @@ a:active {
 .sidebar {
     display: block;
     width: 23%;
-    padding: 20px 0 0 0;
+    padding: 15px 0 0 0;
 }
 
 .main-content {
     display: block;
     width: 77%;
+    padding: 0 0 25px 2.5%;
+/*    padding: 0 0 50px 0 !important;*/
 }
 
 .sidebar-left-nav {
-
+    padding: 0;
 }
 
 .sidebar-left-nav li {
     display: block;
+    padding: 0;
+}
+
+.sidebar-left-nav li:before {
+    display: none;
 }
 
 .sidebar-left-nav li a {
@@ -1655,6 +1738,10 @@ a:active {
     display: block;
     height: 0;
     overflow: hidden;
+}
+
+.sidebar-left-nav .inner-nav-hover ul {
+    padding: 0;
 }
 
 .sidebar-left-nav .inner-nav-hover a {
@@ -1732,9 +1819,9 @@ a:active {
     transform: rotate(-180deg);
 }
 
-.main-content {
+/*.main-content {
     padding: 0 0 0 2.5%;
-}
+}*/
 
 .doctors {
     display: block;
@@ -1849,13 +1936,60 @@ a:active {
     padding: 0 4% 0 0;
 }
 
+.doctor-profile-list {
+    padding: 27px 0;
+}
+
+.doctor-profile-list li {
+    display: table;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #475b74;
+    text-transform: uppercase;
+    padding: 17px 0;
+}
+
+.doctor-profile-list li:before {
+    display: table-cell;
+    vertical-align: top;
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    font-size: 14px;
+    line-height: 20px;
+    color: #b58341;
+    padding: 2px 20px 0 0;
+}
+
 .doctor-profile-text .right {
     display: block;
     width: 46%;
+    padding: 45px 0 0 0;
 }
 
-.doctor-profile-text .right img {
+.doctor-photo-box {
+    display: block;
+    width: 368px;
+    height: auto;
+    position: relative;
+}
 
+.doctor-photo-box:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    border: 1px solid #909090;
+}
+
+.doctor-profile-text .doctor-photo-box img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* -----  /Doctor Profile ------ */
