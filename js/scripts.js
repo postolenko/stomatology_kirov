@@ -130,9 +130,25 @@ $(document).ready(function() {
 
     $(function() {
 
-        $(".customNavigation .btn.prev").prependTo(".owl-pagination");
+        $(".customNavigation .btn.prev").prependTo(".owl-controls");
 
-        $(".customNavigation .btn.next").appendTo(".owl-pagination");
+        $(".customNavigation .btn.next").appendTo(".owl-controls");
+
+        var countSlickSlider = $(".slick-slider").length - 1;
+        var countSlickSliderFor = 0;
+
+        for ( countSlickSliderFor = 0; countSlickSliderFor <= countSlickSlider; countSlickSliderFor++ ) {
+
+            $(".slick-slider:eq("+ countSlickSliderFor +") .slick-dots").wrap("<div class='controls-navigation-slick'></div>");
+
+            $(".slick-slider:eq("+ countSlickSliderFor +") button.slick-prev").prependTo( ".slick-slider:eq("+ countSlickSliderFor +") .controls-navigation-slick" );
+            $(".slick-slider:eq("+ countSlickSliderFor +") button.slick-next").appendTo( ".slick-slider:eq("+ countSlickSliderFor +") .controls-navigation-slick" );
+
+            $(".slick-slider:eq("+ countSlickSliderFor +") .slick-dots li button").text("");
+
+        }
+
+        
 
     });
 
@@ -166,7 +182,7 @@ $(document).ready(function() {
 
         var showMosaicItemInterval = setInterval(function() {
 
-            $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").fadeIn(400);
+            $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").fadeIn(200);
 
             $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +") .mosaic-inner-content").outerWidth(true));
 
@@ -184,7 +200,7 @@ $(document).ready(function() {
 
             }
 
-        }, 700);                
+        }, 300);                
 
 
     });

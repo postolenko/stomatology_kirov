@@ -270,7 +270,12 @@ h2 span {
 }
 
 h3 {
-
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 300;
+    color: #222222;
+    padding: 15px 0;
 }
 
 p {
@@ -280,6 +285,15 @@ p {
     font-weight: 400;
     color: #555555;
     padding: 7px 0;
+}
+
+p a {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #0077cc;
+    text-decoration: underline;
 }
 
 ul {
@@ -317,6 +331,231 @@ img {
     border: 1px solid transparent;
 }
 
+.banner {
+    padding: 30px 0 0 0;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.section-two-cols {
+
+}
+
+.section-two-cols .left {
+
+}
+
+.section-two-cols .txt {
+    display: block;
+    width: 55%;
+}
+
+.section-two-cols .txt p {
+    padding: 12px 0;
+}
+
+.section-two-cols .images {
+    display: block;
+    width: 45%;
+}
+
+.section-two-cols .right.images {
+    padding: 0 0 0 3%;
+}
+
+.section-two-cols .left.images {
+    padding: 0 3% 0 0;
+}
+
+.section-two-cols .images img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.section-two-cols .right {
+
+}
+
+.dialog {
+    padding: 10px 0;
+}
+
+.dialog h4 {
+    display: block;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 700;
+    font-style: italic;
+    color: #555555;
+    padding: 10px 0;
+}
+
+.dialog p {
+    display: block;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #555555;
+    margin: 0 0 0 6px;
+    padding: 10px 0;
+}
+
+.dialog p:before {
+    display: inline-block;
+    vertical-align: top;
+    content: "\AF";
+    font-size: 23px;
+    line-height: 30px;
+    position: relative;
+    top: 6px;
+    right: 9px;
+}
+
+.quote {
+    background: rgba(249, 246, 242, 1);
+    padding: 38px 5%;
+}
+
+.quote h2 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #b58341;
+    padding: 10px 0;
+}
+
+.quote p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #735f45;
+    padding: 10px 0;
+}
+
+.important {
+    padding: 10px 0;
+}
+
+.important h3 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+    color: #e31952;
+    text-transform: uppercase;
+    padding: 1px 0;
+}
+
+.important p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: #e31952;
+    padding: 1px 0 !important;
+}
+
+.articles {
+    padding: 20px 0;
+}
+
+.article-with-marker {
+    display: table;
+    padding: 5px 0;
+}
+
+.article-with-marker:before {
+    display: table-cell;
+    vertical-align: top;
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    font-size: 14px;
+    line-height: 20px;
+    color: #b58341;
+    padding: 19px 20px 0 0;
+}
+
+.article-with-marker h3 {
+    display: block;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 300;
+    color: #222222;
+    padding: 10px 0 15px 0;
+}
+
+.article-with-marker p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #555555;
+    padding: 5px 0;
+}
+
+h2.big-h2 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 300;
+    color: #333333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+p.preface {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    font-style: italic;
+    color: #333333;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.summing-up-block {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #555555;
+    padding: 10px 0;
+}
+
+.summing-up-block h6 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #555555;
+    padding: 10px 0;
+}
+
+.summing-up-block p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #555555;
+    padding: 10px 0;
+}
+
+
+
 button:hover,
 button:active,
 a:hover,
@@ -348,6 +587,13 @@ a:active {
     float: right;
 }
 
+.bold-txt {
+    font-weight: 700;
+}
+
+.pink {
+    color: #e31952;
+}
 
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
@@ -489,12 +735,17 @@ a:active {
     text-align: right;
 }
 
+.header-row-top .col-3 p {
+    padding: 2px 0;
+}
+
 .header-contact .tel-link {
     font-family: "Open Sans", Arial, Verdana, sans-serif;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .header-contact .tel-link .fa {
@@ -513,6 +764,7 @@ a:active {
     font-weight: normal;
     color: #ffffff;
     border-bottom: 1px dotted #ffffff;
+    text-decoration: none;
 }
 
 .header-contact .call-back:link,
@@ -1061,100 +1313,51 @@ a:active {
 /* ----- Slider 2 ------ */
 
 
-.slider-testimonials {
+.quote-quotes {
     background: rgba(249, 246, 242, 1);
 }
 
-.slider-testimonials .slider-box {
-    display: block;
+.quote-testimonial {
+    display: table;
     width: 82%;
     margin: 0 auto;
     padding: 85px 0;
     position: relative;
 }
 
-.slider-testimonials .slick-arrow {
-    display: block;
-    background: none;
-    cursor: pointer;
-    border: 1px solid transparent;
-    height: 70px;
-    width: 70px;
-    overflow: hidden;
-    position: absolute;
-    top: 115px;
-}
-
-.slider-testimonials .slick-arrow span {
-    font-size: 150px;
-    line-height: 150px;
-    color: #f0e9e0;
+.quote-quotes-box {
     position: relative;
-    top: -55px;
-    left: -10px;
-
-    -webkit-transition-property: color;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: color;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: color;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: color;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: color;
-    transition-duration: .3s;
-    transition-timing-function: ease;
 }
 
-.slider-testimonials .slick-arrow span:link,
-.slider-testimonials .slick-arrow span:visited {
+.quote-quotes-box:before,
+.quote-quotes-box:after {
+    display: block;
+    width: 9%;
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 170px;
+    line-height: 150px;
+    font-weight: 300;
     color: #f0e9e0;
+    position: absolute;
+    top: 46px;
 }
 
-.slider-testimonials .slick-arrow span.active {
-    color: #f0e9e0;
+.quote-quotes-box:before {
+    content: "\AB";
+    left: 1%;
 }
 
-.slider-testimonials .slick-arrow span:active,
-.slider-testimonials .slick-arrow span:hover {
-    color: #bf9561;
+.quote-quotes-box:after {
+    content: "\BB";
+    right: 1%;
 }
 
-.slider-testimonials .slick-prev {
-    left: -10%;
-}
-
-.slider-testimonials .slick-prev span {
-    left: -9px;
-}
-
-.slider-testimonials .slick-next {
-    right: -8%;
-}
-
-.slider-testimonials .slick-next span {
-    left: -9px;
-}
-
-.slider-testimonials .slide {
-    display: table;
-}
-
-.slider-testimonials .col-left {
+.quote-testimonial .col-left {
     display: table-cell;
     vertical-align: top;
     width: 150px;
 }
-
-.slider-testimonials .col-left .img-box {
+.quote-testimonial .col-left .img-box {
     display: block;
     width: 120px;
     height: 120px;
@@ -1166,25 +1369,21 @@ a:active {
     border-radius: 50%;
 }
 
-.slider-testimonials .col-left .img-box img {
-
-}
-
-.slider-testimonials .col-right {
+.quote-testimonial .col-right {
     display: table-cell;
     vertical-align: top;
+    padding: 0 2% 0 0;
 }
-
-.slider-testimonials .col-right h2 {
+.quote-testimonial .col-right h2 {
     font-family: "Open Sans", Arial, Verdana, sans-serif;
     font-size: 20px;
     line-height: 35px;
     font-weight: 300;
     color: #b58341;
     padding: 0 0 10px 0;
+    text-align: left;
 }
-
-.slider-testimonials .col-right p {
+.quote-testimonial .col-right p {
     font-family: "Open Sans", Arial, Verdana, sans-serif;
     font-size: 15px;
     line-height: 22px;
@@ -1536,7 +1735,6 @@ a:active {
     font-size: 0;
     line-height: 0;
 }
-
 
 .seo-text-section .links-box ul li:before {
     display: none;
@@ -1992,8 +2190,293 @@ a:active {
     height: auto;
 }
 
+
+
 /* -----  /Doctor Profile ------ */
 
+/* -----  Service Page ------ */
+
+.slider-service {
+    width: 100;
+    position: relative;
+    padding: 30px 0 10px 0;
+}
+
+.slider-service div {
+    font-size: 0;
+    line-height: 0;
+}
+
+.slider-service div .photo_box {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    height: 285px;
+    overflow: hidden;
+    margin: 1.5%;
+}
+
+.slider-service div .photo_box img {
+    width: 100%;
+    height: auto;
+
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .5s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .5s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .5s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.slider-service div .photo_box img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.slick-slider .controls-navigation-slick {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    position: absolute;
+    top: -46px;
+    right: 0;
+}
+
+.slick-slider .slick-dots {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.slick-slider .slick-dots li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+}
+
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 22px;
+    z-index: 3;
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    background-image: url(slick/arrow_sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.slick-slider .slick-prev {
+    background-position: 0 0;
+    right: 5%;
+}
+
+.slick-slider .slick-next {
+    background-position: -51px 0;
+    left: 5%;
+}
+
+.slick-slider .slick-prev img,
+.slick-slider .slick-next img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*.slick-dots .slick-prev:before {
+    content: "\2190";
+}
+
+.slick-dots .slick-next:before {
+    content: "\2192";
+}*/
+
+.slick-slider .slick-dots li button {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    width: 6px;
+    height: 6px;
+    margin: 7px;
+    background: rgba(193, 193, 193, 1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-slider .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    background: rgba(51, 51, 51, 1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.slick-slider .slick-dots li:before {
+    display: none;
+}
+
+.table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0 25px 0;
+}
+
+.table .table-row {
+    display: table-row;
+
+    border-bottom: 1px solid #909090;
+}
+
+.table .table-cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 30px 0;
+}
+
+.table .table-cell-1 {
+    width: 83%;
+}
+
+.table .table-cell-2 {
+    width: 27%;
+    text-align: right;
+}
+
+.table .table-cell-1 h3 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #222222;
+    padding: 0;
+}
+
+.table .table-cell-1 p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #333333;
+    padding: 0;
+}
+
+
+
+.table .table-cell-2 p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #e31952;
+    padding: 0;
+}
+
+.table .table-cell-2 p .fa-rub {
+    font-size: 22px;
+    line-height: 32px;
+    color: #e31952;
+}
+
+
+
+.testimonials-section {
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+}
+
+.testimonials-slider {
+
+}
+
+.testimonials-slider p {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+}
+
+.testimonial-photo-box {
+    display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin: 40px auto 10px auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.testimonial-photo-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.testimonials-slider h3 {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #b58341;
+    padding: 3px 0;
+}
+
+.testimonials-slider.slick-slider {
+    padding: 95px 0;
+}
+
+.testimonials-slider .controls-navigation-slick {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 25px;
+    left: 0;
+}
+
+.testimonials-slider .controls-navigation-slick .slick-prev {
+    right: 1%;
+}
+
+.testimonials-slider .controls-navigation-slick .slick-next {
+    left: 1%;
+}
+
+
+
+/* -----  /Service Page ------ */
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
