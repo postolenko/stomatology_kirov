@@ -27,6 +27,11 @@ $(document).ready(function() {
 
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
+        if($(".callback")) {
+            
+            $(".callback").css({ "top" : ( $(window).height() - $(".callback-form").outerHeight(true) ) / 2 + "px" });
+            
+        }
 
         getLogoBoxHeight();
 
@@ -182,7 +187,7 @@ $(document).ready(function() {
 
         var showMosaicItemInterval = setInterval(function() {
 
-            $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").fadeIn(200);
+            // $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").fadeIn(200);
 
             $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +") .mosaic-inner-content").outerWidth(true));
 
@@ -198,28 +203,60 @@ $(document).ready(function() {
 
                 clearInterval(showMosaicItemInterval);
 
+                $(".mosaicflow").animate({"opacity" : 1}, 300);
+
             }
 
-        }, 300);                
+        }, 100);                
 
 
     });
 
 
+// -----------------------------------------------------------------------------
+
+//  Показать скрыть диалоговое окно
 
 
+    $(".popup-btn").click(function() {
+
+        $(".callback").fadeIn(300);
+
+        $(".callback").css({ "top" : ( $(window).height() - $(".callback-form").outerHeight(true) ) / 2 + "px" });
+
+    });
+
+
+    $(".close-callback, .callback-bg").click(function() {
+
+        $(".callback").fadeOut(300);
+
+    });
+
+
+
+// -----------------------------------------------------------------------------
+
+// Центрирование центрального блога в промоблоке на главной странице
 
 
     function getLogoBoxHeight() {
 
-        for( countHeadersRowFor = 0; countHeadersRowFor <= countHeadersRow; countHeadersRowFor++) {
+            headersRowsHeight = 0;
 
-            headersRowsHeight = headersRowsHeight + $(".header .header-row:eq("+ countHeadersRowFor +")").outerHeight();
+            for( countHeadersRowFor = 0; countHeadersRowFor <= countHeadersRow; countHeadersRowFor++) {
 
-        }
+                headersRowsHeight = headersRowsHeight + $(".header .header-row:eq("+ countHeadersRowFor +")").outerHeight();
 
-        $(".header .logo-box").height( $(".header").height() - headersRowsHeight);
+            }
 
+            $(".header .logo-box").height( $(".header").outerHeight(true) - headersRowsHeight);
+
+            console.log($(".header .center-box").height() ) ;
+
+            // console.log ($(".header .center-box").offset().top );
+
+            // $(".header .center-box").offset({top: 150});
     }
 
 
