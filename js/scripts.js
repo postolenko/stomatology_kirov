@@ -44,108 +44,6 @@ $(document).ready(function() {
     });
 
 
-    // -----------------------------------------------------------------------------
-
-    //  Показать скрыть диалоговое окно
-
-    // var doctorPhotoCount = $(".doctor-card .photo-box").length - 1;
-    // var doctorPhotoCountFor = 0;
-
-    
-    // var widthImg = 1;
-
-    // console.log(doctorPhotoCountFor +"  "+ doctorPhotoCount);
-
-    // for( doctorPhotoCountFor = 0; doctorPhotoCountFor <= doctorPhotoCount;  doctorPhotoCountFor++ ) {
-
-    //     // console.log(doctorPhotoCountFor +"  "+ doctorPhotoCount);
-
-
-    //     if ( $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +") img").height() < $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +")").height() ||
-    //          $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +") img").width() < $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +")").width() ) {
-
-    //         console.log($(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +") img").width());
-                
-    //         // for( widthImg = 100;  ; widthImg++ ) {
-
-    //         // while ($(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +") img").height() > $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +")").height() &&
-    //         //        $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +") img").width() > $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +")").width()){
-
-
-    //         //     $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +") img").css({"width" : widthImg + "%"});
-
-
-    //         // }
-
-    //         widthImg = 100;
-
-    //         var imgWidthAnim;
-
-    //         imgWidthAnim = setTimeout(function() {
-
-    //             // console.log($(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +") img").width());
-
-    //             $(".doctor-card .photo-box:eq("+ 1 +") img").css({"width" : ( widthImg++ )  + "%"});
-
-    //             // widthImg++;
-
-    //             console.log($(".doctor-card .photo-box:eq("+ 1 +") img").height() +"   "+ $(".doctor-card .photo-box:eq("+ 1 +")").height() );
-
-    //             console.log($(".doctor-card .photo-box:eq("+ 1 +") img").width() +"   "+ $(".doctor-card .photo-box:eq("+ 1 +")").width());
-
-
-    //             if ( ( $(".doctor-card .photo-box:eq("+ 1 +") img").height() >= $(".doctor-card .photo-box:eq("+ 1 +")").height() ) && (  $(".doctor-card .photo-box:eq("+ 1 +") img").width() >= $(".doctor-card .photo-box:eq("+ 1 +")").width() ) ){
-
-
-    //                 // $(".doctor-card .photo-box:eq("+ doctorPhotoCountFor +") img").css({"width" : widthImg + "%"});
-
-    //                 console.log($(".doctor-card .photo-box:eq("+ 1 +") img").height() +"   "+ $(".doctor-card .photo-box:eq("+ 1 +")").height()); 
-
-    //                 clearInterval(imgWidthAnim);
-
-    //                 function getImgSize() {
-
-    //                     getImgSizeInterval();
-
-    //                 };
-
-    //             }
-
-    //             console.log($(".doctor-card .photo-box:eq("+ 1 +") img").height() +"  "+ $(".doctor-card .photo-box:eq("+ 1 +")").height());   
-
-    //         }, 100);        
-
-
-    //     }
-
-    // }
-
-    // imgSizeInterval();
-
-    // getImgSize();
-
-    // function getImgSize() {        
-
-    //     imgSizeInterval();
-
-    //     console.log(widthImg);
-
-    // }
-
-    // function imgSizeInterval() {
-
-    //     setInterval(function() {
-
-    //         widthImg++;
-
-    //         getImgSize();
-
-    //     }, 1000);
-
-    // }
-
-
-
 
     $(function() {
 
@@ -154,6 +52,8 @@ $(document).ready(function() {
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
     });
+
+
 
     $(function() {
 
@@ -309,8 +209,6 @@ $(document).ready(function() {
 
                 clearInterval(showMosaicItemInterval);
 
-                // $(".mosaicflow").animate({"opacity" : 1}, 300);
-
             }
 
         }, 100);                
@@ -432,38 +330,17 @@ $(document).ready(function() {
 
     function getLogoBoxHeight() {
 
-            headersRowsHeight = 0;
+        headersRowsHeight = 0;
 
-            for( countHeadersRowFor = 0; countHeadersRowFor <= countHeadersRow; countHeadersRowFor++) {
+        for( countHeadersRowFor = 0; countHeadersRowFor <= countHeadersRow; countHeadersRowFor++) {
 
-                headersRowsHeight = headersRowsHeight + $(".header .header-row:eq("+ countHeadersRowFor +")").outerHeight();
-
-            }
-
-            $(".header .logo-box").height( $(".header").outerHeight(true) - headersRowsHeight);
-
-            // console.log($(".header .center-box").height() ) ;
-
-            // console.log ($(".header .center-box").offset().top );
-
-            // $(".header .center-box").offset({top: 150});
-    }
-
-
-// -----------------------------------------------------------------------------
-
-// Положени блока img-ox при ааптивности
-
-    function getImgBoxPosition() {
-
-        if( bodyWidth <= 768) {
-
-            
+            headersRowsHeight = headersRowsHeight + $(".header .header-row:eq("+ countHeadersRowFor +")").outerHeight();
 
         }
 
+        $(".header .logo-box").height( $(".header").outerHeight(true) - headersRowsHeight);
+
     }
-   
 
 
 });

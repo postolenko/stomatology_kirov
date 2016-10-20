@@ -8,7 +8,6 @@
 	}
 
 	.doctor-card .photo-box img {
-		/*display: block;*/
 		width: auto;
 		height: 100%;
 	}
@@ -349,6 +348,10 @@
 	    width: 100%;
 	}
 
+	.doctor-card .descript {
+		padding: 28px 5%;
+	}
+
 }
 
 
@@ -575,11 +578,11 @@
 	}
 
 	.doctors .thumbnail {
-	    width: 90%;
+	    width: 98%;
 	}
 
 	.doctors .doctor-card {
-		height: 500px;
+		height: 540px;
 	}
 
 	.doctor-card .photo-box {
@@ -587,7 +590,7 @@
 	}
 
 	.doctor-card .descript {
-		padding: 25px 5%;
+		padding: 46px 5%;
 	}
 
 	.seo-text-section .four-cols .col {
