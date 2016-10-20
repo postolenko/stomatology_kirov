@@ -356,7 +356,9 @@ $(document).ready(function() {
 //  Показать скрыть диалоговое окно
 
 
-    $(".popup-btn").click(function() {
+    $(".popup-btn, .call-back").click(function(callbackEvent) {
+
+        callbackEvent.preventDefault();
 
         $(".callback").fadeIn(300);
 
