@@ -31,6 +31,10 @@
 
 @media only screen and (max-width: 768px) {
 
+	.callback-form {
+		width: 65%;
+	}
+
 	.sidebar {
 		position: fixed;
 		top: 0;
