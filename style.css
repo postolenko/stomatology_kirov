@@ -1107,7 +1107,7 @@ header:after {
     display: inline-block;
     vertical-align: middle;
     width: 33.33%;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .header-row-top .col-1 {
@@ -2872,10 +2872,15 @@ header:after {
 }
 
 .doctor-photo-box {
-    display: block;
-    width: 368px;
+    display: block;   
+    width: 90%;
+    max-width: 368px;
     height: auto;
     position: relative;
+}
+
+.doctor-photo-box.for-480 {
+    display: none;
 }
 
 .doctor-photo-box:after {

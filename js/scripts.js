@@ -11,6 +11,12 @@ $(document).ready(function() {
 
     // });
 
+    var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
 
     var countHeadersRow = $(".header .header-row").length - 1;
     var countHeadersRowFor = 0;
@@ -42,11 +48,11 @@ $(document).ready(function() {
 
     //  Показать скрыть диалоговое окно
 
-    var doctorPhotoCount = $(".doctor-card .photo-box").length - 1;
-    var doctorPhotoCountFor = 0;
+    // var doctorPhotoCount = $(".doctor-card .photo-box").length - 1;
+    // var doctorPhotoCountFor = 0;
 
     
-    var widthImg = 1;
+    // var widthImg = 1;
 
     // console.log(doctorPhotoCountFor +"  "+ doctorPhotoCount);
 
@@ -442,6 +448,22 @@ $(document).ready(function() {
 
             // $(".header .center-box").offset({top: 150});
     }
+
+
+// -----------------------------------------------------------------------------
+
+// Положени блока img-ox при ааптивности
+
+    function getImgBoxPosition() {
+
+        if( bodyWidth <= 768) {
+
+            
+
+        }
+
+    }
+   
 
 
 });

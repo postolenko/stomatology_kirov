@@ -43,6 +43,10 @@
 		width: 65%;
 	}
 
+	.breadcrumbs {
+		display: none;
+	}
+
 	.show-sidebar {
 		display: block;
 	}
@@ -86,6 +90,32 @@
 	.main-content {
 		width: 100%;
 		padding: 0 0 25px 0;
+	}
+
+	.doctor-photo-box {
+		display: none;
+	}
+
+	.doctor-photo-box.for-480 {
+		display: block;
+		width: 258px;
+		margin: 30px auto 40px auto;
+	}
+
+	.doctor-photo-box:after {
+		top: -20px;
+		left: 20px;
+	}
+
+	.doctor-profile-text .left {
+		width: 100%;
+		padding: 0;
+	}
+
+	.h2-box h2 {
+	    font-size: 30px;
+	    line-height: 35px;
+	    font-weight: 400;
 	}
 
 	.section-two-cols .txt {
@@ -242,6 +272,12 @@
 		font-size: 30px;
 		line-height: 36px;
 		font-weight: 400;
+		text-align: center;
+	}
+
+	h2 span {
+		font-size: 24px;
+		top: -5px;
 	}
 
 	h3 {
