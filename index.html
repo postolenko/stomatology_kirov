@@ -24,16 +24,17 @@
 
 	<link rel="stylesheet" type="text/css" href="owl-carousel/owl.carousel.css">
 
-	<!-- <link rel="stylesheet" type="text/css" href="owl-carousel/owl.theme.css"> -->
-
+	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css" />
 
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 
-	<!-- <script type="text/javascript" src="vendors/js/jquery.mosaicflow.js"></script> -->
-
 	<script type="text/javascript" src="slick/slick.js"></script>
 
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
 	<script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+
+	<script src="vendors/js/jquery.row-grid.js"></script>
 
 
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
@@ -104,7 +105,21 @@
 					
 					<div class="col col-1">
 						
-						<a class="free-consultation-link" href="#">Бесплатная<br /> консультация</a>
+						<!-- <a class="free-consultation-link" href="#">Бесплатная<br /> консультация</a> -->
+
+						<div class="respmenubtn-box">
+
+							<div class="respmenubtn">
+
+								<span></span>
+								<span></span>
+								<span></span>
+
+							</div>
+
+							<p>Меню</p>
+
+						</div>
 
 					</div>
 
@@ -145,7 +160,7 @@
 									<li><a href="#">О клинике</a></li>
 									<li><a class="with-inner-nav" href="#">Услуги<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 
-										<ul class="active">
+										<ul>
 											
 											<li><a href="#">Услуга 1</a></li>
 											<li><a href="#">Услуга 2</a></li>
@@ -159,7 +174,7 @@
 									</li>
 									<li><a class="with-inner-nav" href="#">Акции<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 
-										<ul class="active">
+										<ul>
 											
 											<li><a href="#">Акции 1</a></li>
 											<li><a href="#">Акции 2</a></li>
@@ -187,7 +202,27 @@
 
 				</div>
 
-				<div class="header-row header-contact">
+				<div class="header-row header-contact offset-ziro">
+
+					<div class="col-left">
+
+						<div class="respmenubtn-box">
+
+							<div class="respmenubtn">
+
+								<span></span>
+								<span></span>
+								<span></span>
+
+							</div>
+
+							<p>Меню</p>
+
+						</div>
+
+					</div>
+
+					<div class="col-right">
 
 						<p>
 							
@@ -200,6 +235,8 @@
 							<a class="call-back" href="#">Заказать звонок</a>
 
 						</p>
+
+					</div>
 
 				</div>
 
@@ -248,6 +285,61 @@
 				</div>
 
 				<!-- <div class="bottom-arcs"></div> -->
+
+				<div class="resp-nav">
+
+					<nav>
+					
+						<ul class="resp-nav-list">
+							
+							<li><a href="#">О клинике First Line</a></li>
+							<li><a class="with-inner-nav" href="#">Услуги<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+								<div class="inner-nav-hover">
+
+									<ul>
+										
+										<li><a href="#">Услуга 1</a></li>
+										<li><a href="#">Услуга 2</a></li>
+										<li><a href="#">Услуга 3</a></li>
+										<li><a href="#">Услуга 4</a></li>
+										<li><a href="#">Услуга 5</a></li>
+										<li><a href="#">Услуга 6</a></li>
+
+									</ul>
+
+								</div>
+
+							</li>
+							<li><a class="with-inner-nav" href="#">Акции<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+								<div class="inner-nav-hover">
+
+									<ul>
+										
+										<li><a href="#">Акции 1</a></li>
+										<li><a href="#">Акции 2</a></li>
+										<li><a href="#">Акции 3</a></li>
+										<li><a href="#">Акции 4</a></li>
+										<li><a href="#">Акции 5</a></li>
+										<li><a href="#">Акции 6</a></li>
+
+									</ul>
+
+								</div>
+
+							</li>
+							<li><a href="#">Специалисты</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Налоговый вычет</a></li>
+							<li><a href="#">Прайс-лист</a></li>
+							<li><a href="#">Контакты</a></li>
+
+						</ul>
+
+					</nav>
+
+				</div>
 
 			</div>
 
@@ -311,9 +403,9 @@
 					
 					<div class="row">
 
-						<div class="article clearfix">
+						<div class="article offset-ziro">
 						
-							<div class="col-content left">
+							<div class="col-content">
 								
 								<h2>Болит зуб...</h2>
 
@@ -323,7 +415,7 @@
 
 							</div>
 
-							<div class="col-photo right">
+							<div class="col-photo ">
 								
 								<div class="article-photo">
 
@@ -339,19 +431,9 @@
 
 						</div>
 
-						<div class="article clearfix">
-						
-							<div class="col-content left">
-								
-								<h2>Болит зуб...</h2>
+						<div class="article offset-ziro">
 
-								<p>Его обладатель предположит: «Наверное, кариес...». Терапевт-стоматолог согласится, но добавит еще пульпит. Пародонтолог обратит внимание на состояние десен, ортодонт на неправильный прикус. Свою версию причин заболевания выдвинет хирург.</p>
-
-								<p>Чей диагноз верен? Возможно, правы все. Но как тогда лечить?</p>
-
-							</div>
-
-							<div class="col-photo right">
+							<div class="col-photo">
 
 								<div class="article-photo">
 
@@ -364,6 +446,16 @@
 								</div>
 
 							</div>
+						
+							<div class="col-content ">
+								
+								<h2>Болит зуб...</h2>
+
+								<p>Его обладатель предположит: «Наверное, кариес...». Терапевт-стоматолог согласится, но добавит еще пульпит. Пародонтолог обратит внимание на состояние десен, ортодонт на неправильный прикус. Свою версию причин заболевания выдвинет хирург.</p>
+
+								<p>Чей диагноз верен? Возможно, правы все. Но как тогда лечить?</p>
+
+							</div>							
 
 						</div>
 
@@ -415,9 +507,9 @@
 					
 					<div class="row">
 
-						<div class="article clearfix">
+						<div class="article offset-ziro">
 						
-							<div class="col-content left">
+							<div class="col-content">
 								
 								<h2>Болит зуб...</h2>
 
@@ -427,7 +519,7 @@
 
 							</div>
 
-							<div class="col-photo right">
+							<div class="col-photo ">
 								
 								<div class="article-photo">
 
@@ -443,19 +535,9 @@
 
 						</div>
 
-						<div class="article clearfix">
-						
-							<div class="col-content left">
-								
-								<h2>Болит зуб...</h2>
+						<div class="article offset-ziro">
 
-								<p>Его обладатель предположит: «Наверное, кариес...». Терапевт-стоматолог согласится, но добавит еще пульпит. Пародонтолог обратит внимание на состояние десен, ортодонт на неправильный прикус. Свою версию причин заболевания выдвинет хирург.</p>
-
-								<p>Чей диагноз верен? Возможно, правы все. Но как тогда лечить?</p>
-
-							</div>
-
-							<div class="col-photo right">
+							<div class="col-photo">
 
 								<div class="article-photo">
 
@@ -468,6 +550,16 @@
 								</div>
 
 							</div>
+						
+							<div class="col-content ">
+								
+								<h2>Болит зуб...</h2>
+
+								<p>Его обладатель предположит: «Наверное, кариес...». Терапевт-стоматолог согласится, но добавит еще пульпит. Пародонтолог обратит внимание на состояние десен, ортодонт на неправильный прикус. Свою версию причин заболевания выдвинет хирург.</p>
+
+								<p>Чей диагноз верен? Возможно, правы все. Но как тогда лечить?</p>
+
+							</div>							
 
 						</div>
 
@@ -515,7 +607,7 @@
 
 				</section>
 
-				<section>
+		<!-- 		<section>
 					
 					<div class="mosaic-section row clearfix">
 						
@@ -669,6 +761,173 @@
 								<div class="mosaic-inner-content">
 
 									<img src="mosaic/14.jpg" alt="">
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</section> -->
+
+
+				<section>
+					
+					<div class="mosaic-section row clearfix">
+						
+						<p class="mosaic-logo"><img src="img/mosaik_logo.png" alt=""></p>
+
+						<h2>«Стоматология на кирова» -<br /> ювелирное лечение ваших зубов</h2>
+
+
+						<div class="clearfix mosaicflow">
+
+							<div class="mosaicflow__item mosaicflow__item_1 first-item" data="584">
+
+								<div class="mosaic-inner-content">
+
+									<img width="107" height="149" src="mosaic/1.jpg" alt="">
+
+									<a href="#" class="mosaic-link">Диплом доверия потребителей</a>
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item mosaicflow__item_2" data="290">
+
+								<div class="mosaic-inner-content">
+
+									<p class="p1">Нам доверяют более</p>
+
+									<p class="p2">1000</p>
+
+									<p class="p3">постоянных клиентов</p>
+
+									<a href="#" class="mosaic-link">Смотреть отзывы</a>
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/3.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/4.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/5.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/6.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/7.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/8.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/9.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/10.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/11.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/12.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/13.jpg" width="290" height="270" alt="">
+
+								</div>
+
+							</div>
+
+							<div class="mosaicflow__item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/14.jpg" width="290" height="270" alt="">
 
 								</div>
 
@@ -974,9 +1233,19 @@
 				$(".btn.prev").click(function(){
 					owl.trigger('owl.prev');
 				});
-
 			 
 			});
+
+			(function($){
+
+				$(window).on("load",function(){
+
+				    $(".resp-nav-list").mCustomScrollbar();
+
+				});
+
+	    	})(jQuery);
+
 
 		</script>
 	
