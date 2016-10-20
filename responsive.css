@@ -1,5 +1,12 @@
 @media only screen and (max-width: 1280px) {
 
+
+	.doctors {
+	    display: block;
+	    width: 100%;
+	    margin: 0; 
+	}
+
 	.doctor-card .photo-box img {
 		/*display: block;*/
 		width: auto;
