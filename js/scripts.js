@@ -3,28 +3,18 @@ $(document).ready(function() {
     //   preload
     // $(window).on('load', function () {
 
-    //     setTimeout(function() {
+        // setTimeout(function() {
 
-    //         $(".preload-bg").fadeOut(500);
+        //     $(".preload-bg").fadeOut(500);
 
-    //     }, 700);
-  
+        // }, 700);
 
     // });
 
-    var w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
     var countHeadersRow = $(".header .header-row").length - 1;
     var countHeadersRowFor = 0;
-    var headersRowsHeight = 0;
-
-
-
-   
+    var headersRowsHeight = 0;   
 
 
     getLogoBoxHeight();
@@ -43,45 +33,9 @@ $(document).ready(function() {
             
         }
 
-        if(bodyWidth <= 480) {
-
-            $(".sidebar-left-nav").addClass("withscroll");
-
-        } else {
-
-            $(".sidebar-left-nav").removeClass("withscroll");
-
-        }
-
         getLogoBoxHeight();
 
-
-        // for( doctoPhotoCountFor = 0; doctoPhotoCountFor >= doctoPhotoCount;  doctoPhotoCountFor++ ) {
-
-        //     if ( $(".doctor-card .photo-box:eq("+ doctoPhotoCountFor +") img").height() < $(".doctor-card .photo-box:eq("+ doctoPhotoCountFor +")").height() ) {
-
-        //         $(".doctor-card .photo-box:eq("+ doctoPhotoCountFor +") img").css({
-        //                                                                             "height" : "100%",
-        //                                                                             "width" : "auto"
-        //                                                                         });
-        //     }
-
-        // }
-
-
     });
-
-
-    if(bodyWidth <= 768) {
-
-        $(".sidebar-left-nav").addClass("withscroll");
-
-    } else {
-
-        $(".sidebar-left-nav").removeClass("withscroll");
-
-    }
-
 
 
     // -----------------------------------------------------------------------------
@@ -455,8 +409,6 @@ $(document).ready(function() {
         });
 
         $(".close-sidebar-btn").click(function() {
-
-            console.log(".close-sidebar-btnr");
 
             $(".sidebar").removeClass("show");
 

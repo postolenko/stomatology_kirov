@@ -24,6 +24,8 @@
 
 	<link rel="stylesheet" type="text/css" href="owl-carousel/owl.carousel.css">
 
+	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css" />
+
 	<!-- <link rel="stylesheet" type="text/css" href="owl-carousel/owl.theme.css"> -->
 
 
@@ -32,6 +34,8 @@
 	<!-- <script type="text/javascript" src="vendors/js/jquery.mosaicflow.js"></script> -->
 
 	<script type="text/javascript" src="slick/slick.js"></script>
+
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 	<script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
 
@@ -760,6 +764,19 @@
 					slidesToScroll: 1,
 					fade: true
 				});
+
+				(function($){
+
+					$(window).on("load",function(){
+
+					    $(".resp-nav-list").mCustomScrollbar();
+
+					    $(".withscroll").mCustomScrollbar();
+
+					});
+
+	    		})(jQuery);
+
 
 			 
 			});
