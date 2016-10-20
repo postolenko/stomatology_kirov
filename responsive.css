@@ -290,6 +290,9 @@
 
 	.footer {
 		padding: 45px 0;
+		background-image: url(img/shape_footer.png);
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	.footer .col {
