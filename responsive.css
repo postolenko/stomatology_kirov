@@ -1,5 +1,8 @@
 @media only screen and (max-width: 1280px) {
 
+	.main-nav ul li {
+		padding: 0 15px !important;
+	}
 
 	.doctors {
 	    display: block;
