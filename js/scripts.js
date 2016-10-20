@@ -72,6 +72,17 @@ $(document).ready(function() {
     });
 
 
+    if(bodyWidth <= 768) {
+
+        $(".sidebar-left-nav").addClass("withscroll");
+
+    } else {
+
+        $(".sidebar-left-nav").removeClass("withscroll");
+
+    }
+
+
 
     // -----------------------------------------------------------------------------
 
