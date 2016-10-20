@@ -35,6 +35,10 @@
 		width: 65%;
 	}
 
+	.show-sidebar {
+		display: block;
+	}
+
 	.sidebar {
 		position: fixed;
 		top: 0;
@@ -50,6 +54,10 @@
 
 	.sidebar.show {
 		left: 0;
+	}
+
+	.sidebar-resp-box {
+	    display: table;
 	}
 
 	.sidebar-left-nav {

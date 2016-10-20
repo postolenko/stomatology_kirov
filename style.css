@@ -2470,7 +2470,8 @@ header:after {
 }
 
 .show-sidebar {
-    display: block;
+    /*display: block;*/
+    display: none;
     width: 36px;
     height: 36px;
     cursor: pointer;
@@ -2496,7 +2497,8 @@ header:after {
 }
 
 .sidebar-resp-box {
-    display: table;
+    /*display: table;*/
+    display: none;
     width: 100%;
     background: rgba(243, 243, 243, 1);
 }
@@ -2957,7 +2959,8 @@ header:after {
     width: auto;
     position: absolute;
     top: -46px;
-    right: 0;
+    /*right: 0;*/
+    right: 3%;
 }
 
 .slick-slider .slick-dots {
