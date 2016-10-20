@@ -38,6 +38,10 @@
 		width: 35%;
 	}
 
+	.comfortable-section .col {
+		width: 50%;
+		padding: 10px 3%;
+	}
 
 
 }
@@ -118,11 +122,6 @@
 
 	.mosaicflow__item {
 		height: 234px;
-	}
-
-	.comfortable-section .col {
-		width: 50%;
-		padding: 10px 3%;
 	}
 
 	.breadcrumbs {
