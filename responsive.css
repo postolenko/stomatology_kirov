@@ -32,7 +32,6 @@
 @media only screen and (max-width: 768px) {
 
 	.sidebar {
-		/*display: none;*/
 		position: fixed;
 		top: 0;
 		left: -110%;
@@ -40,9 +39,9 @@
 		padding: 0;
 		max-width: 320px;
 		min-height: 100vh;
--webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.5);
-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.5);
+		-moz-box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.5);
+		box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.5);
 	}
 
 	.sidebar.show {
