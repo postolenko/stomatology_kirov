@@ -58,6 +58,7 @@
 		-webkit-box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.5);
 		-moz-box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.5);
 		box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.5);
+		z-index: 34;
 	}
 
 	.sidebar.show {
