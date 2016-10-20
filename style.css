@@ -722,7 +722,7 @@ img.for-480 {
     left: 0;
     background: rgba(220, 220, 220, .7);
     overflow-y: hidden;
-    z-index: 30;
+    z-index: 35;
 
     -webkit-transition-property: top;
     -webkit-transition-duration: .7s;
