@@ -34,6 +34,9 @@ CONTENTS:
 		max-width: 100%;
 		outline: none;
 		direction: ltr;
+		position: absolute;
+		right: -1000%;
+		opacity: .01;
 	}
 
 	.mCSB_container{ /* contains the original content */
@@ -68,8 +71,7 @@ y-axis
 		height: auto;
 		left: auto;
 		top: 0;
-		right: -1000%;
-		opacity: .01;
+		right: 0;
 		bottom: 0;
 	}
 
