@@ -1826,27 +1826,20 @@ header {
     text-align: center;
 }
 
-.mosaicflow {
+.grid {
     padding: 80px 0 40px 0;
     text-align: center;
 }
 
-.mosaicflow__column {
-    float:left;
-}
-
-.mosaicflow__item {
+.grid-item {
     display: block;
     background: rgba(255, 255, 255, 1);
     overflow: hidden;
-    /*height: auto;*/
     height: 270px;
-    /*width: 24.25% !important;*/
-    /*float: left;*/
     position: relative;
 }
 
-.mosaicflow__item img {
+.grid-item img {
     display:block;
     width:100%;
     height:auto;
@@ -1878,7 +1871,7 @@ header {
     transition-timing-function: ease;
 }
 
-.mosaicflow__item:hover img {
+.grid-item:hover img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -1886,25 +1879,18 @@ header {
     transform: scale(1.1);
 }
 
-.mosaicflow__item_1 {
-    /*width: 49% !important;*/
+.grid-item_1 {
     height: 270px;
     text-align: center;
     background: rgba(204, 201, 201, 0);
 }
 
-.mosaicflow__item_1 .mosaic-inner-content {
+.grid-item_1 .mosaic-inner-content {
     display: block;
-    /*height: 185px;*/
     margin: 10% auto;
-/*    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;*/
 }
 
-.mosaicflow__item_1 .mosaic-inner-content img {
+.grid-item_1 .mosaic-inner-content img {
     display: block;
     width: 107px;
     height: 149px;
@@ -1934,13 +1920,8 @@ header {
     text-decoration: none;
 }
 
-.mosaicflow__item_2 {
-    display: block;
-    width: 25%;
-    /*height: 270px;*/
+.grid-item_2 {
     background: rgba(249, 246, 242, 1);
-    text-align: center;
-    position: relative;
     padding: 4% 0 0 0;
 }
 
@@ -1957,22 +1938,15 @@ header {
 .mosaic-inner-content img {
     display: block;
     width: auto;
-    /*height: auto;*/
     height: 270px;
 }
 
-.mosaicflow__item_2 .mosaic-inner-content {
+.grid-item_2 .mosaic-inner-content {
     display: block;
-    /*height: 100;*/
     margin: auto;
-/*    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;*/
 }
 
-.mosaicflow__item_2 p {
+.grid-item_2 p {
     font-family: "Open Sans", Arial, Verdana, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -1980,17 +1954,17 @@ header {
     color: #444444;
 }
 
-.mosaicflow__item_2 .p1 {
+.grid-item_2 .p1 {
     font-size: 20px;
     line-height: 30px;
 }
 
-.mosaicflow__item_2 .p2 {
+.grid-item_2 .p2 {
     font-size: 90px;
     line-height: 100px;
 }
 
-.mosaicflow__item_2 .p3 {
+.grid-item_2 .p3 {
     font-size: 20px;
     line-height: 24px;
 }
