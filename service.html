@@ -37,6 +37,8 @@
 
 	<script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
 
+	<script src="vendors/js/isotope-docs.min.js"></script>
+
 
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
@@ -53,14 +55,6 @@
 <body>
 
 <div class="wrapper">
-
-	<div class="preload-bg">
-		
-
-
-	</div>
-
-
 
 	<div class="callback">
 
@@ -103,7 +97,7 @@
 					
 					<div class="col col-1">
 						
-						<!-- <a class="free-consultation-link" href="#">Бесплатная<br /> консультация</a> -->
+						<a class="free-consultation-link" href="#">Бесплатная<br /> консультация</a>	
 
 						<div class="respmenubtn-box">
 
@@ -324,35 +318,39 @@
 
 						</div>
 						
-						<ul class="sidebar-left-nav withscroll">
+						<div class="left-nav-inner-wrapp">
+						
+							<ul class="sidebar-left-nav withscroll">
 
-							<li><a href="#">Общий наркоз</a></li>
-							<li><a class="with-inner-nav" href="#">Имплантология<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								<li><a href="#">Общий наркоз</a></li>
+								<li><a class="with-inner-nav" href="#">Имплантология<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 
-								<div class="inner-nav-hover">
+									<div class="inner-nav-hover">
 
-									<ul>
-										
-										<li><a href="#">Отзывы</a></li>
-										<li><a href="#">Цены</a></li>
-										<li><a href="#">Вопросы и ответы</a></li>
-										<li><a href="#">Имплантация зубов</a></li>
-										<li><a href="#">Цены на имплантацию</a></li>
-										<li><a href="#">Одномоментная имплантация</a></li>
-										<li><a href="#">Виды зубных имплантатов</a></li>
-										<li><a href="#">Синус-лифтинг</a></li>
+										<ul>
+											
+											<li><a href="#">Отзывы</a></li>
+											<li><a href="#">Цены</a></li>
+											<li><a href="#">Вопросы и ответы</a></li>
+											<li><a href="#">Имплантация зубов</a></li>
+											<li><a href="#">Цены на имплантацию</a></li>
+											<li><a href="#">Одномоментная имплантация</a></li>
+											<li><a href="#">Виды зубных имплантатов</a></li>
+											<li><a href="#">Синус-лифтинг</a></li>
 
-									</ul>
+										</ul>
 
-								</div>
+									</div>
 
-							</li>
-							<li><a href="#">Протезирование зубов</a></li>
-							<li><a href="#">Хирургическая стоматология</a></li>
-							<li><a href="#">Терапевтическая стоматология</a></li>
-							<li><a href="#">Ортодонтическое лечение</a></li>
+								</li>
+								<li><a href="#">Протезирование зубов</a></li>
+								<li><a href="#">Хирургическая стоматология</a></li>
+								<li><a href="#">Терапевтическая стоматология</a></li>
+								<li><a href="#">Ортодонтическое лечение</a></li>
 
-						</ul>
+							</ul>
+
+						</div>
 
 					</div>
 
@@ -1097,7 +1095,7 @@
 
 					</div>
 
-					<div class="col col-3">
+					<div class="col col-3 clearfix">
 
 						<a class="web-studio" href="#">
 
@@ -1160,27 +1158,26 @@
 				});
 
 
-
 				$(".testimonials-slider").slick({
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					dots: true,
 					fade: true
-				});
-
-				(function($){
-
-					$(window).on("load",function(){
-
-					    $(".resp-nav-list").mCustomScrollbar();
-
-					    $(".withscroll").mCustomScrollbar();
-
-					});
-
-	    		})(jQuery);
+				});				
 			 
 			});
+
+			(function($){
+
+				$(window).on("load",function(){
+
+				    $(".resp-nav-list").mCustomScrollbar();
+
+				    $(".withscroll").mCustomScrollbar();
+
+				});
+
+    		})(jQuery);
 
 		</script>
 	

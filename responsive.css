@@ -1,5 +1,9 @@
 @media only screen and (max-width: 1280px) {
 
+	.row {
+		padding: 0 1%;
+	}
+
 	.main-nav ul li {
 		padding: 0 15px !important;
 	}
@@ -22,6 +26,10 @@
 
 	.row {
 		padding: 0 2%;
+	}
+
+	.free-consultation-link {
+		display: none;
 	}
 
 	.respmenubtn-box {

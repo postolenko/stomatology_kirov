@@ -34,6 +34,8 @@
 
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
+	<script src="vendors/js/isotope-docs.min.js"></script>
+
 	<script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
 
 
@@ -322,8 +324,6 @@
 
 						</div>
 
-						<!-- <div class="left-nav-wrapp"> -->
-
 						<div class="left-nav-inner-wrapp">
 						
 							<ul class="sidebar-left-nav withscroll">
@@ -357,8 +357,6 @@
 							</ul>
 
 						</div>
-
-						<!-- </div> -->
 
 					</div>
 
@@ -742,7 +740,7 @@
 
 					</div>
 
-					<div class="col col-3">
+					<div class="col col-3 clearfix">
 
 						<a class="web-studio" href="#">
 
@@ -779,29 +777,59 @@
 				});
 
 				$(".btn.next").click(function(){
+
 					owl.trigger('owl.next');
+
 				});
 
 				$(".btn.prev").click(function(){
+
 					owl.trigger('owl.prev');
+
+				});
+
+				$(".slider-service").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					fade: true
+				});
+
+				$(".slider-service-768").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					fade: true
 				});
 
 
-				(function($){
+				$(".testimonials-slider").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					fade: true
+				});		 
+			
 
-					$(window).on("load",function(){
+		    	$('.grid').isotope({
+				  itemSelector: '.grid-item',
+				  layoutMode: 'fitRows'
+				});
 
-					    $(".resp-nav-list").mCustomScrollbar();
-
-					    $(".withscroll").mCustomScrollbar();
-
-					});
-
-	    		})(jQuery);
-
-
-			 
 			});
+
+			(function($){
+
+				$(window).on("load",function(){
+
+				    $(".resp-nav-list").mCustomScrollbar();
+
+				    $(".withscroll").mCustomScrollbar();
+
+				});
+
+    		})(jQuery);
+
 
 		</script>
 	

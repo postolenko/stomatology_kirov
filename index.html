@@ -36,9 +36,6 @@
 
 	<script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
 
-	<!-- <script src="vendors/js/jquery.row-grid.js"></script> -->
-
-
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 
@@ -97,11 +94,7 @@
 
 		<div class="header">
 
-			<!-- <img class="bg-image" src="img/promo_1_bg.jpg" alt=""> -->
-
 			<div class="for-borders">
-
-				<!-- <div class="top-arcs"></div> -->
 
 				<div class="header-row header-row-top row offset-ziro">
 					
@@ -1042,7 +1035,7 @@
 
 					</div>
 
-					<div class="col col-3">
+					<div class="col col-3 clearfix">
 
 						<a class="web-studio" href="#">
 
@@ -1079,13 +1072,45 @@
 				});
 
 				$(".btn.next").click(function(){
+
 					owl.trigger('owl.next');
+
 				});
 
 				$(".btn.prev").click(function(){
+
 					owl.trigger('owl.prev');
+
 				});
-			 
+
+				$(".slider-service").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					fade: true
+				});
+
+				$(".slider-service-768").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					fade: true
+				});
+
+
+				$(".testimonials-slider").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					fade: true
+				});		 
+			
+
+		    	$('.grid').isotope({
+				  itemSelector: '.grid-item',
+				  layoutMode: 'fitRows'
+				});
+
 			});
 
 			(function($){
@@ -1094,14 +1119,11 @@
 
 				    $(".resp-nav-list").mCustomScrollbar();
 
+				    $(".withscroll").mCustomScrollbar();
+
 				});
 
-	    	})(jQuery);
-
-	    	$('.grid').isotope({
-			  itemSelector: '.grid-item',
-			  layoutMode: 'fitRows'
-			});
+    		})(jQuery);
 
 
 		</script>

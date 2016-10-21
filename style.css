@@ -1050,6 +1050,10 @@ header {
     border: 1px solid #8ba2e1;
 }
 
+.main-page .free-consultation-link {
+    display: none;
+}
+
 .header-row-top .logo-link {
     display: block;
     width: 133px;
@@ -1409,7 +1413,7 @@ header {
 
 .main-nav ul li a.with-inner-nav + ul li {
     display: block;
-    padding: 5px 0;
+    padding: 3px 0 !important;
 }
 
 .main-nav ul li a.with-inner-nav + ul li a {
@@ -3145,6 +3149,7 @@ footer {
 .footer .web-studio {
     display: table;
     text-align: right;
+    float: right;
 }
 
 .footer .web-studio h2 {
