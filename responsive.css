@@ -303,10 +303,10 @@
 		padding: 10px 5%;
 	}
 
-	.testimonials-slider .slick-slider .controls-navigation-slick {
+	.testimonials-slider.slick-slider .controls-navigation-slick {
 		width: 100%;
 		text-align: center;
-		 right: 0; 
+		right: 0; 
 	}
 
 	.seo-text-section .four-cols .col {
