@@ -65,8 +65,25 @@
 	}
 
 
-	.mosaicflow__item {
+	/*.mosaicflow__item {
 		width: 33% !important;
+	}*/
+
+	.mosaicflow__item {
+		height: 236px;
+	}
+
+	.mosaicflow__item_1 .mosaic-inner-content img {
+		width: 95px;
+		height: auto;
+	}
+
+	.grid-item {
+	    width: 33% !important;
+	}
+
+	.grid-item_width_2 {
+	    width: 66.2% !important;
 	}
 
 	.quote-testimonial {
@@ -126,10 +143,6 @@
 		line-height: 29px;
 		padding: 27px 0 10px 0;
 		text-align: center;
-	}
-
-	.mosaicflow__item {
-		height: 230px;
 	}
 
 	.breadcrumbs {
@@ -343,8 +356,16 @@
 
 @media only screen and (max-width: 600px) {
 
-	.mosaicflow__item {
+/*	.mosaicflow__item {
 		width: 49.75% !important;
+	}*/
+
+	.grid-item {
+	    width: 49.75% !important;
+	}
+
+	.grid-item_width_2 {
+	    width: 99.5% !important;
 	}
 
 	.doctors .thumbnail {
@@ -644,10 +665,14 @@
 
 @media only screen and (max-width: 370px) {
 
-	.mosaicflow__item {
-		display: none;
-		width: 98% !important;
+	.grid-item {
+	    width: 98% !important;
 	}
+
+	.grid-item_width_2 {
+	    width: 98% !important;
+	}
+
 
 	.mosaicflow__item:nth-child(1),
 	.mosaicflow__item:nth-child(2),

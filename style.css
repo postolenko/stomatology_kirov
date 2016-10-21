@@ -1837,10 +1837,11 @@ header {
 
 .mosaicflow__item {
     display: block;
-    background: rgba(204, 201, 201, 1);
+    background: rgba(255, 255, 255, 1);
     overflow: hidden;
-    /*height: 270px;*/
-    width: 24.25% !important;
+    /*height: auto;*/
+    height: 270px;
+    /*width: 24.25% !important;*/
     /*float: left;*/
     position: relative;
 }
@@ -1849,6 +1850,12 @@ header {
     display:block;
     width:100%;
     height:auto;
+
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
 
     -webkit-transition-property: transform;
     -webkit-transition-duration: .5s;
@@ -1880,8 +1887,8 @@ header {
 }
 
 .mosaicflow__item_1 {
-    width: 50%;
-    /*height: 270px;*/
+    /*width: 49% !important;*/
+    height: 270px;
     text-align: center;
     background: rgba(204, 201, 201, 0);
 }
@@ -1889,12 +1896,12 @@ header {
 .mosaicflow__item_1 .mosaic-inner-content {
     display: block;
     /*height: 185px;*/
-    margin: auto;
-    position: absolute;
+    margin: 10% auto;
+/*    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0;*/
 }
 
 .mosaicflow__item_1 .mosaic-inner-content img {
@@ -1907,7 +1914,7 @@ header {
 .mosaic-link {
     font-family: "Open Sans", Arial, Verdana, sans-serif;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 19px;
     font-weight: 300;
     color: #078fce;
     text-decoration: underline;
@@ -1934,6 +1941,7 @@ header {
     background: rgba(249, 246, 242, 1);
     text-align: center;
     position: relative;
+    padding: 4% 0 0 0;
 }
 
 .mosaic-inner-content {
@@ -1949,18 +1957,19 @@ header {
 .mosaic-inner-content img {
     display: block;
     width: auto;
-    height: auto;
+    /*height: auto;*/
+    height: 270px;
 }
 
 .mosaicflow__item_2 .mosaic-inner-content {
     display: block;
-    height: 185px;
+    /*height: 100;*/
     margin: auto;
-    position: absolute;
+/*    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0;*/
 }
 
 .mosaicflow__item_2 p {
@@ -1984,6 +1993,14 @@ header {
 .mosaicflow__item_2 .p3 {
     font-size: 20px;
     line-height: 24px;
+}
+
+.grid-item {
+    width: 25% !important;
+}
+
+.grid-item_width_2 {
+    width: 50% !important;
 }
 
 
