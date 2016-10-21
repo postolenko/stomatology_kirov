@@ -32,9 +32,11 @@
 
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
+	<script src="vendors/js/isotope-docs.min.js"></script>
+
 	<script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
 
-	<script src="vendors/js/jquery.row-grid.js"></script>
+	<!-- <script src="vendors/js/jquery.row-grid.js"></script> -->
 
 
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
@@ -623,21 +625,21 @@
 						<h2>«Стоматология на кирова» -<br /> ювелирное лечение ваших зубов</h2>
 
 
-						<div class="clearfix mosaicflow">
+						<div class="clearfix mosaicflow grid">
 
-							<div class="mosaicflow__item mosaicflow__item_1 first-item" data-width="584">
+							<!-- <div class="mosaicflow__item mosaicflow__item_1 grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img width="107" height="149" src="mosaic/1.jpg" alt="">
+									<img src="mosaic/1.jpg" alt="">
 
 									<a href="#" class="mosaic-link">Диплом доверия потребителей</a>
 
 								</div>
 
-							</div>
+							</div> -->
 
-							<div class="mosaicflow__item mosaicflow__item_2" data-width="290">
+							<div class="mosaicflow__item mosaicflow__item_2 grid-item">
 
 								<div class="mosaic-inner-content">
 
@@ -653,121 +655,131 @@
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/3.jpg" width="290" height="270" alt="">
+									<img src="mosaic/3.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<!-- <div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/4.jpg" width="290" height="270" alt="">
+									<img src="mosaic/4.jpg" alt="">
+
+								</div>
+
+							</div> -->
+
+							<div class="mosaicflow__item grid-item">
+
+								<div class="mosaic-inner-content">
+
+									<img src="mosaic/5.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/5.jpg" width="290" height="270" alt="">
+									<img src="mosaic/6.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/6.jpg" width="290" height="270" alt="">
+									<img src="mosaic/7.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/7.jpg" width="290" height="270" alt="">
+									<img src="mosaic/8.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/8.jpg" width="290" height="270" alt="">
+									<img src="mosaic/9.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/9.jpg" width="290" height="270" alt="">
+									<img src="mosaic/15.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/10.jpg" width="290" height="270" alt="">
+									<img src="mosaic/10.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/11.jpg" width="290" height="270" alt="">
+									<img src="mosaic/11.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/12.jpg" width="290" height="270" alt="">
+									<img src="mosaic/12.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/13.jpg" width="290" height="270" alt="">
+									<img src="mosaic/13.jpg" alt="">
 
 								</div>
 
 							</div>
 
-							<div class="mosaicflow__item">
+							<div class="mosaicflow__item grid-item">
 
 								<div class="mosaic-inner-content">
 
-									<img src="mosaic/14.jpg" width="290" height="270" alt="">
+									<img src="mosaic/14.jpg" alt="">
 
 								</div>
 
@@ -1085,6 +1097,12 @@
 				});
 
 	    	})(jQuery);
+
+	    	$('.grid').isotope({
+			  // options
+			  itemSelector: '.grid-item',
+			  layoutMode: 'fitRows'
+			});
 
 
 		</script>

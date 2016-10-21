@@ -1839,9 +1839,9 @@ header {
     display: block;
     background: rgba(204, 201, 201, 1);
     overflow: hidden;
-    height: 270px;
-    width: auto;
-    float: left;
+    /*height: 270px;*/
+    width: 24.25% !important;
+    /*float: left;*/
     position: relative;
 }
 
@@ -1880,15 +1880,15 @@ header {
 }
 
 .mosaicflow__item_1 {
-    width: 584px;
-    height: 270px;
+    width: 50%;
+    /*height: 270px;*/
     text-align: center;
     background: rgba(204, 201, 201, 0);
 }
 
 .mosaicflow__item_1 .mosaic-inner-content {
     display: block;
-    height: 185px;
+    /*height: 185px;*/
     margin: auto;
     position: absolute;
     top: 0;
@@ -1929,8 +1929,8 @@ header {
 
 .mosaicflow__item_2 {
     display: block;
-    width: 290px;
-    height: 270px;
+    width: 25%;
+    /*height: 270px;*/
     background: rgba(249, 246, 242, 1);
     text-align: center;
     position: relative;
