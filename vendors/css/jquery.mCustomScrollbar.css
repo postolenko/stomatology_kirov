@@ -34,9 +34,6 @@ CONTENTS:
 		max-width: 100%;
 		outline: none;
 		direction: ltr;
-		position: absolute;
-		right: -1000%;
-		opacity: .01;
 	}
 
 	.mCSB_container{ /* contains the original content */
