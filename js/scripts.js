@@ -185,43 +185,6 @@ $(document).ready(function() {
 
 // -----------------------------------------------------------------------------
 
-//  Mosaic Sript
-
-    $(function() {
-
-        var mosaicItemsCount = $(".mosaicflow .mosaicflow__item").length - 1;
-        var mosaicItemsCountFor = 0;
-
-        var showMosaicItemInterval = setInterval(function() {
-
-
-            $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +") .mosaic-inner-content").outerWidth(true));
-
-            if($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data")) {
-
-                $(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").width($(".mosaicflow__item:eq("+ mosaicItemsCountFor +")").attr("data"));
-
-            }
-
-            mosaicItemsCountFor++;
-
-            if(mosaicItemsCountFor > mosaicItemsCount) {
-
-                clearInterval(showMosaicItemInterval);
-
-            }
-
-        }, 100);                
-
-
-    });
-
-
-
-
-
-// -----------------------------------------------------------------------------
-
 //  Показать скрыть диалоговое окно
 
 
