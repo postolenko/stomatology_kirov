@@ -673,6 +673,10 @@
 	    width: 98% !important;
 	}
 
+	.mosaicflow__item {
+		display: none;
+	}
+
 
 	.mosaicflow__item:nth-child(1),
 	.mosaicflow__item:nth-child(2),
