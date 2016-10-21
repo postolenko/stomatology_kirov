@@ -690,7 +690,7 @@ img.for-480 {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: 5px;
+    top: 4px;
 }
 
 .close-callback span:nth-child(2) {
@@ -699,7 +699,7 @@ img.for-480 {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 3px;
+    top: 2px;
 }
 
 /* ---  Responsive Navigation  --- */
