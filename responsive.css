@@ -199,6 +199,12 @@
 		margin: 25px 0 0 0;
 	}
 
+	.mCSB_scrollTools{
+		opacity: .75 !important;
+		filter: "alpha(opacity=75)" !important;
+		-ms-filter: "alpha(opacity=75)" !important;
+	}
+
 	.main-content {
 		width: 100%;
 		padding: 0 0 25px 0;

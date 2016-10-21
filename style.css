@@ -2312,6 +2312,13 @@ header {
     color: #ffffff;
 }
 
+
+    .mCSB_scrollTools{
+        opacity: 0 !important;
+        filter: "alpha(opacity=0)" !important;
+        -ms-filter: "alpha(opacity=0)" !important;
+    }
+
 .sidebar-resp-box {
     display: none;
     width: 100%;
